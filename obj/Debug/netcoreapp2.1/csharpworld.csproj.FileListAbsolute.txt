@@ -1,0 +1,11 @@
+/Users/robertolivi/csharp-practice/bin/Debug/netcoreapp2.1/csharpworld.deps.json
+/Users/robertolivi/csharp-practice/bin/Debug/netcoreapp2.1/csharpworld.runtimeconfig.json
+/Users/robertolivi/csharp-practice/bin/Debug/netcoreapp2.1/csharpworld.runtimeconfig.dev.json
+/Users/robertolivi/csharp-practice/bin/Debug/netcoreapp2.1/csharpworld.dll
+/Users/robertolivi/csharp-practice/bin/Debug/netcoreapp2.1/csharpworld.pdb
+/Users/robertolivi/csharp-practice/obj/Debug/netcoreapp2.1/csharpworld.csprojAssemblyReference.cache
+/Users/robertolivi/csharp-practice/obj/Debug/netcoreapp2.1/csharpworld.csproj.CoreCompileInputs.cache
+/Users/robertolivi/csharp-practice/obj/Debug/netcoreapp2.1/csharpworld.AssemblyInfoInputs.cache
+/Users/robertolivi/csharp-practice/obj/Debug/netcoreapp2.1/csharpworld.AssemblyInfo.cs
+/Users/robertolivi/csharp-practice/obj/Debug/netcoreapp2.1/csharpworld.dll
+/Users/robertolivi/csharp-practice/obj/Debug/netcoreapp2.1/csharpworld.pdb
