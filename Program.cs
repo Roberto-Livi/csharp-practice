@@ -3,6 +3,15 @@ using csharpworld.Math;
 
 namespace csharpworld
 {
+
+    public enum ShippingMethod
+    {
+        RegularAirMail = 1,
+        RegisteredAirMail = 2,
+        Express = 3
+    }
+
+
     class Program
     {
         static void Main(string[] args)
@@ -30,6 +39,13 @@ namespace csharpworld
             var formattedNames = string.Join(", ", nms);
             System.Console.WriteLine(formattedNames);
             
+
+            // Enums
+            var method = ShippingMethod.Express;
+            System.Console.WriteLine((int)method);
+            System.Console.WriteLine(method.ToString());
+
+
         }
     }
 }
