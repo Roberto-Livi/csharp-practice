@@ -45,6 +45,18 @@ namespace csharpworld
             System.Console.WriteLine((int)method);
             System.Console.WriteLine(method.ToString());
 
+            // Reference Types
+            var a = 10;
+            var b = a;
+            b++;
+            System.Console.WriteLine(string.Format("a: {0}, b: {1}", a, b));
+
+            var array1 = new int[3] {1, 2, 3};
+            var array2 = array1;
+            array2[0] = 0;
+            System.Console.WriteLine(array1[0]);
+            System.Console.WriteLine(array2[0]);
+
 
         }
     }
