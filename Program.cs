@@ -128,7 +128,7 @@ namespace csharpworld
             jagged[2] = new int[3];
 
             // Array Methods
-            var ns = new[] {3, 7, 9, 2, 14, 6};
+            var ns = new[] { 3, 7, 9, 2, 14, 6 };
 
             // IndexOf()
             var index = Array.IndexOf(ns, 9);
@@ -225,8 +225,9 @@ namespace csharpworld
             float price = 29.95f;
             System.Console.WriteLine(price.ToString("C"));
 
-            // String Builder
+            // String Builder (no search methods)
             var builder = new StringBuilder("Hello World");
+            System.Console.WriteLine(builder);
 
             // Append and AppendLine
             builder.Append('-', 10);
@@ -243,8 +244,6 @@ namespace csharpworld
             builder.Insert(0, new string('-', 10));
 
             System.Console.WriteLine(builder);
-
-
 
         }
 
