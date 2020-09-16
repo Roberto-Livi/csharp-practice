@@ -1,6 +1,7 @@
 ﻿using System;
 using csharpworld.Math;
 using System.Collections.Generic;
+using System.Text;
 
 namespace csharpworld
 {
@@ -223,7 +224,26 @@ namespace csharpworld
 
             float price = 29.95f;
             System.Console.WriteLine(price.ToString("C"));
+
+            // String Builder
+            var builder = new StringBuilder("Hello World");
+
+            // Append and AppendLine
+            builder.Append('-', 10);
+            builder.AppendLine();
+            builder.Append("Header");
+            builder.AppendLine();
+            builder.Append('-', 10);
+            // System.Console.WriteLine(builder);
             
+            builder.Replace('-', '+');
+
+            builder.Remove(0, 10);
+
+            builder.Insert(0, new string('-', 10));
+
+            System.Console.WriteLine(builder);
+
 
 
         }
