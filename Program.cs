@@ -81,6 +81,33 @@ namespace csharpworld
                 System.Console.WriteLine("It's evening");
             }
 
+            // Iteration statements
+            var nums = new int[3] {1, 2, 4};
+            foreach(var n in nums)
+            {
+                System.Console.WriteLine("Value: {0}", n);
+            }
+
+            // Random Class
+            var random = new Random();
+            for (var i = 0; i < 10; i++)
+            {
+                System.Console.WriteLine(random.Next(1, 11));
+            }
+
+            // Random Password
+            const int passwordLength = 10;
+            var buffer = new char[passwordLength];
+            for (var i = 0; i < passwordLength; i++)
+            {
+                buffer[i] = (char)('a' + random.Next(0, 26));
+            }
+            
+            var password = new string(buffer);
+            System.Console.WriteLine(password);
+
+
+
         }
 
         public static void Increment(int number){
