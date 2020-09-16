@@ -1,5 +1,6 @@
 ﻿using System;
 using csharpworld.Math;
+using System.Collections.Generic;
 
 namespace csharpworld
 {
@@ -161,6 +162,29 @@ namespace csharpworld
                 System.Console.WriteLine(n);
             }
 
+            // Lists
+            var list = new List<int>() {1, 2, 3, 4};
+
+            // Add()
+            list.Add(1);
+            list.AddRange(new int[3] { 5, 6, 7});
+            foreach (var n in list)
+            {
+                System.Console.WriteLine("List Value: {0}", n);
+            }
+
+            // IndexOf()
+            System.Console.WriteLine("Index of 3: " + list.IndexOf(3));
+            System.Console.WriteLine("Index of 1: " + list.LastIndexOf(1));
+
+            // Count()
+            System.Console.WriteLine("Count: " + list.Count);
+
+            // Remove
+            list.Remove(2);
+
+            // Clear
+            list.Clear();
 
         }
 
