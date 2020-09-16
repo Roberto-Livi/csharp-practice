@@ -107,6 +107,30 @@ namespace csharpworld
             System.Console.WriteLine(password);
 
 
+            // Arrays
+
+            // Rectangular 2D
+            var matrix = new int[3, 5]
+            {
+                {1, 2, 3, 4, 5},
+                {6, 7, 8, 9, 10},
+                {11, 12, 13, 14, 15}
+            };
+            var element = matrix[1, 1];
+            System.Console.WriteLine(element);
+
+            // Jagged Array
+            var jagged = new int[3][];
+            jagged[0] = new int[4];
+            jagged[1] = new int[5];
+            jagged[2] = new int[3];
+
+            // Array Methods
+            // Clear()
+            // Copy()
+            // IndexOf()
+            // Reverse()
+            // Sort()
 
         }
 
