@@ -126,11 +126,41 @@ namespace csharpworld
             jagged[2] = new int[3];
 
             // Array Methods
-            // Clear()
-            // Copy()
+            var ns = new[] {3, 7, 9, 2, 14, 6};
+
             // IndexOf()
-            // Reverse()
+            var index = Array.IndexOf(ns, 9);
+            System.Console.WriteLine("Index of 9: {0}", index);
+
+            // Clear()
+            Array.Clear(ns, 0, 2);
+
+            // Copy()
+            int[] another = new int[3];
+            Array.Copy(ns, another, 3);
+            foreach (var n in another)
+            {
+                System.Console.WriteLine(n);
+            }
+
             // Sort()
+            Array.Sort(ns);
+
+            System.Console.WriteLine("Effect of Sort()");
+            foreach (var n in ns)
+            {
+                System.Console.WriteLine(n);
+            }
+
+            // Reverse()
+            Array.Reverse(ns);
+
+            System.Console.WriteLine("Effect of Reverse()");
+            foreach (var n in ns)
+            {
+                System.Console.WriteLine(n);
+            }
+
 
         }
 
