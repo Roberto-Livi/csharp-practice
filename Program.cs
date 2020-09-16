@@ -186,6 +186,46 @@ namespace csharpworld
             // Clear
             list.Clear();
 
+            // Dates
+            var now = DateTime.Now;
+            var today = DateTime.Today;
+            System.Console.WriteLine("Hour: " + now.Hour);
+            System.Console.WriteLine("Minute: " + now.Minute);
+
+            // String Methods
+            var fullName = "Roberto Livi";
+            System.Console.WriteLine("Trim: '{0}' ", fullName.ToUpper());
+
+            var idx = fullName.IndexOf(' ');
+            var fName = fullName.Substring(0, idx);
+            var lName = fullName.Substring(idx + 1);
+            System.Console.WriteLine("First Name: {0}", fName);
+            System.Console.WriteLine("Last Name: {0}", lName);
+            System.Console.WriteLine("Index of 1: " + list.IndexOf(3));
+
+            // Replace
+            System.Console.WriteLine(fullName.Replace("Roberto", "Marco"));
+
+            // IsNullOrEmpty)()
+            if (String.IsNullOrEmpty(fullName))
+            {
+                System.Console.WriteLine("Invalid");
+            }
+            else
+            {
+                System.Console.WriteLine("Valid");
+            }
+
+            // Convert String to a Number
+            var str = "25";
+            var age = Convert.ToInt32(str);
+            System.Console.WriteLine(age);
+
+            float price = 29.95f;
+            System.Console.WriteLine(price.ToString("C"));
+            
+
+
         }
 
         public static void Increment(int number){
