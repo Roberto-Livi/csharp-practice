@@ -257,6 +257,15 @@ namespace csharpworld
             System.Console.WriteLine(s1.HasHonors());
             System.Console.WriteLine(s2.HasHonors());
 
+            // Movie
+            Movie m1 = new Movie("The Avengers", "Joss Whedon", "PG-13");
+            Movie m2 = new Movie("Shrek", "Adam Adamson", "P1");
+
+            System.Console.WriteLine(m2.Rating);
+
+            
+
+
         }
 
         public static void Increment(int number){

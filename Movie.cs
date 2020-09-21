@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 namespace csharpworld
 {
@@ -11,7 +12,23 @@ namespace csharpworld
         {
             title = aTitle;
             director = aDirector;
-            rating = aRating;
+            Rating = aRating;
+        }
+
+        public string Rating
+        {
+            get { return rating; }
+            set { 
+                string[] values = { "G", "R", "PG", "PG-13"};
+                if (values.Contains(value))
+                {
+                    rating = value;
+                }
+                else
+                {
+                    rating = "NR";
+                }
+            }
         }
     }
 }
