@@ -263,8 +263,11 @@ namespace csharpworld
 
             System.Console.WriteLine(m2.Rating);
 
-            
 
+            // Song
+            Song holiday = new Song("Holiday", "Green Day", 200);
+            Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
+            System.Console.WriteLine(Song.songCount);
 
         }
 
