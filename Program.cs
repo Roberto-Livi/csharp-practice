@@ -245,6 +245,18 @@ namespace csharpworld
 
             System.Console.WriteLine(builder);
 
+            // Book
+            Book book1 = new Book("Bleach", "Tite Kubo", 700);
+            
+
+            System.Console.WriteLine(book1.title);
+
+            // Student
+            Student s1 = new Student("Jim", "Business", 2.8);
+            Student s2 = new Student("Pam", "CS", 3.8);
+            System.Console.WriteLine(s1.HasHonors());
+            System.Console.WriteLine(s2.HasHonors());
+
         }
 
         public static void Increment(int number){
